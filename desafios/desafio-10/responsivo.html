@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+
+    
+    
+
+
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+    @font-face {
+        font-family: 'Airstrike';
+        src: url('fontes/airstrike.ttf' ) format('truetype') ;
+    }
+ 
+    :root{
+        --fonte-padrao: arial, verdana, helvetica, sans-serif;
+        --font-titulo1: 'Airstrike', sans-serif;
+        --font-titulo2: "Bebas Neue", sans-serif;
+
+        --cor0:#01B6E1;
+        --cor1:#1E98B6;
+        --cor2:#2E798B;
+        --cor3:#305761;
+        --cor4:#182c3d;
+        --cor5:#2B3133;
+    }
+   
+    *{
+      margin: 0px;
+      padding: 0px;
+    }
+    
+     body{
+        background-color: var(--cor0);
+        margin: 0px;
+        
+    }
+
+      header{
+            background-image: linear-gradient(to right, var(--cor3), var(--cor4));
+            padding-top: 30px;
+            padding-bottom: 50px;
+            color: white;
+            max-height: 400px;
+            min-height: 100px
+        }
+
+        header h1{
+            text-align: center;
+            color: white;
+            font-family: var(--font-titulo2);
+            margin-bottom: 20px;
+            font-size: 3em;
+            font-weight: normal;
+            min-width: 280px;
+            text-shadow: 1px 1px 2px black ;
+        }
+      
+
+     nav{
+        background-image: linear-gradient(to right, var(--cor3), var(--cor4));
+        padding: 20px;
+        box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.575);
+        
+        
+     }
+     nav > a{
+        padding-left: 10px;
+        margin: 10px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.3em;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.562);
+        transition-duration: 0.4s;
+     }
+
+     nav >a:hover{
+        background-color: var(--cor2);
+     } 
+
+     main{ 
+        background-color: white;
+        min-width: 260px;
+        max-width: 1000px;
+        max-height: 3000px;
+        min-height: 568px;
+        margin: auto;
+        padding: 20px;
+        font-family: var(--font-padrao);
+        text-indent: 20px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.411);
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        
+     }
+
+     main p{ 
+       text-align: justify;
+     }
+
+     main a {
+        color: var(--cor3);
+        font-weight: bold;
+        text-decoration: none;
+        padding-left: 5px;
+        padding-right: 5px;
+
+     }
+
+     a:hover{
+        text-decoration: underline;
+     }
+
+     a.externo::after{
+        content: '\0020\1F517';
+     }
+
+
+
+      main  img{
+        width: 100%;
+        padding-bottom: 10px;
+        padding-top: 10px;
+     }
+
+     article{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+     }
+
+     article > h1{
+        padding: 10px;
+        font-family: var(--font-titulo2);
+        font-size: 2.5em;
+        color: var(--cor5);
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.562);
+     }
+     article >h2{
+        font-family: var(--font-titulo1);
+        font-size: 2em;
+        color: var(--cor4);
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.562);
+        padding-bottom: 10px;
+     } 
+
+     div.video{
+       position: relative;
+       background-color: var(--cor3);
+       padding-bottom: 50%;
+       margin: 0px -20px 0px -30px;
+     }
+
+     div.video iframe{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+
+     }
+
+        
+ 
+    aside ul {
+        list-style-position: inside;
+        list-style-type: '\1F5F8\0020';
+        columns: 2;
+        padding: 10px;
+    }
+
+    footer{
+        background-color: var(--cor3);
+        margin-top: 40px;
+        padding: 1px;
+
+    }
+
+
+
+    
+</style>
+
+<body>
+    <header>
+        <h1>Responsividade</h1>
+    
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Noticias</a>
+        <a href="#">Curiosidade</a>
+        <a href="#">Fale Conosco</a>
+    </nav>
+    <main>
+        <article>
+            <h1>Teste 1</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum distinctio earum dolores dolor debitis praesentium facere sit, officiis ut laudantium! Ipsa omnis amet in, ipsum rem ullam iusto <a href="#" class="externo">autem ab!</a> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur odio veniam ex quibusdam sed quas, commodi porro <a href="#" class="externo">explicabo delectus</a> aliquid eius vel voluptates suscipit cum eum sit cupiditate. Fuga, molestias!</p>
+
+            <picture>
+                <source media="(max-width: 400px)" srcset="imagens/irina-blok-3.jpg">
+                <source media="(max-width: 600px)" srcset="imagens/irina-blok-2.jpg">
+                <img src="imagens/irina-blok.jpg" alt="Irina">
+            </picture>
+
+            <h2>Teste 2</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat maiores necessitatibus assumenda quos, molestiae blanditiis, voluptatibus laborum, sit nemo accusamus nostrum officia amet ipsa doloribus odio consectetur? Ex, numquam vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto adipisci error quos esse autem quibusdam enim dolor rem laborum blanditiis sapiente cupiditate quo, aut non eligendi consequatur nisi optio. Suscipit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet et neque ducimus aliquam! Ratione voluptatibus, alias quo corporis voluptates, dolore eum vitae quas omnis iusto maxime. Modi deserunt ipsa error.</p>
+
+            <picture>
+                <source media="(max-width: 400px)" srcset="imagens/dan-droids-3.png">
+                <source media="(max-width: 600px)" srcset="imagens/dan-droids-2.png">
+                <img src="imagens/dan-droids.png" alt="dan-droids">
+            </picture>
+
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M?si=VmvHJqOJnGs6hOu3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+
+        </article>
+
+        <aside>
+            <ul>
+                <li><abbr title="Bolo de copo">1.5 - Cupcake</abbr></li>
+                <li><abbr title="Rosquinha">1.6 - Donut</abbr></li>
+                <li>3.0 - Eclair</li>
+                <li>2.2 - Froyo</li>
+                <li>2.3 - Gingerbread</li>
+                <li>3.0 - Honeycomb</li>
+                <li>4.0 - Ice Cream Sandwich</li>
+                <li>4.1 - Jelly Bean</li>
+                <li>4.4 - KitKat</li>
+                <li>5.0 - Lolipop</li>
+                <li>6.0 - Marshmallow</li>
+                <li>7.0 - Nougat</li>
+                <li>8.0 - Oreo</li>
+                <li>9.0 - Pie</li>
+            </ul>
+        </aside>
+
+    
+
+    </main>
+
+    <footer><a href="#">Site criado por <strong>Dr.Kelvin</strong></a></footer>
+
+</body>
+</html>
