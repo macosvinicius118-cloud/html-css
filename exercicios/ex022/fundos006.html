@@ -3,21 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundos</title>
+    <title>Fundos fixo de tela</title>
     <style>
         body{
-            height: 100vh;
-            background-color: black;
-            background-image: url(imagens/wallpaper002.jpg);
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover;
 
+             /*
+             background-color: black
+             background-image: url(imagens/wallpaper002.jpg)  
+             background-position: center center;
+             background-repeat: no-repeat;
+             background-size: cover;
+             background-attachment: fixed;
+             */
+
+
+             /* shorthand - background
+             color > image > position > repeat > attachment
+             */
+
+            height: 100vh;
+            background:black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
+            
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 600px;
+            min-width: 270px;
             margin: auto;
             padding: 10px;
             border: 1px solid darkblue;
@@ -29,7 +42,12 @@
 <body>
     <main>
         <h1>Teste de imagem de fundo</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta facere accusamus ducimus ad hic, minus molestiae explicabo placeat, doloremque laborum sint blanditiis unde aliquid earum necessitatibus illo eligendi esse obcaecati? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto explicabo doloribus harum fugit corporis, reiciendis quia atque hic nesciunt! Sapiente iusto dignissimos atque quas, autem ex magni suscipit saepe! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor earum veniam minus ratione ipsum accusantium commodi, quia harum iure, quo maxime voluptatibus quod magni eveniet impedit, vero voluptate maiores cum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum similique ex architecto maiores quia corporis voluptas nam. Molestias nulla vero iusto cupiditate inventore magnam obcaecati iste, qui consequatur ipsum doloremque.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta facere accusamus ducimus ad hic, minus molestiae explicabo placeat, doloremque laborum sint blanditiis unde aliquid earum necessitatibus illo eligendi esse obcaecati? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit architecto explicabo doloribus harum fugit corporis, reiciendis quia atque hic nesciunt! Sapiente iusto dignissimos atque quas, autem ex magni suscipit saepe! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor earum veniam minus ratione ipsum accusantium commodi, quia harum iure, quo maxime voluptatibus quod magni eveniet impedit, vero voluptate maiores cum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum similique ex architecto maiores quia corporis voluptas nam. Molestias nulla vero iusto cupiditate inventore magnam obcaecati iste, qui consequatur ipsum doloremque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident asperiores quam reiciendis doloribus, mollitia ipsum fuga accusamus modi quas praesentium quo reprehenderit recusandae. Voluptate praesentium pariatur soluta, laudantium dignissimos laborum.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, sequi, illo tenetur omnis odio corporis tempore, iusto in debitis sed non. Enim fugit exercitationem libero repudiandae blanditiis quasi aut fuga?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. A quo quisquam veniam voluptate aut commodi soluta sapiente sit repellat fuga voluptatem, neque sint maxime. Nam qui minus voluptas quidem natus!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. In esse, atque similique repellat modi veniam? Iure itaque nulla officia aut ex dolores eaque, commodi eveniet nisi quidem quia debitis accusamus.
+        </p>
     </main>
 </body>
 </html>
