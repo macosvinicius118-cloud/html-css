@@ -11,43 +11,48 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        div{
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        caption{
+            background-color: gray;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 7px;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: grey;
+            color: white;
+
+        }
+
+        div#container{
             overflow-x: scroll;
         }
 
-    table{
-        border-collapse: collapse;
-        width: 500px;
+        thead{
+            position: sticky;
+            top: -1px;
+            background-color: darkgrey;
+        }
 
-    }
+        td,th{
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
 
-    caption{
-        background-color: gray;
-        font-size: 1.5em;
-        font-weight: bold;
-        padding: 10px;
-    }
+        tfoot,th{
+            background-color: darkgray;
+        }
 
-    thead > tr{
-        position: sticky;
-        top: -1px;
-        background-color: gray;
-    }
+        .num{
+            text-align: right;
+        }
 
-    tbody > tr:nth-child(even){
-        background-color: grey;
-        color: white;
-    }
-
-    th,tfoot{
-        background-color: darkgray;
-    }
-
-
-    th,td{
-        border: 1px solid black;
-        padding: 10px;
-    }
 
 
        
@@ -59,7 +64,7 @@
 </head>
 <body>
     <h1>Tudo sobre Tabela</h1>
-    <div >
+    <div id="container">
         <table>
             <caption>Tabela</caption>
             <thead>
