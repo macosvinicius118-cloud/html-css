@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+
+    <style>
+      *{
+         font-family: Arial, Helvetica, sans-serif;
+      }
+
+ 
+    </style>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+ <form action="cadastro.php" method="post" autocomplete="on">
+   <p>
+      <label for="iname">Nome:</label>
+      <input type="text" name="name" id="iname" placeholder="Nome Do Aluno" required maxlength="30" minlength="5" autocomplete="iname">
+   </p>
+
+   <p>
+      <label for="inota">Nota:</label>
+      <input type="number" name="nota" id="inota" value="0" step="0.1" max="10" min="0">
+   </p>
+
+   <p>
+      <label for="imes">Mes:</label>
+      <input type="month" name="mes" id="imes" value="2026-04" >
+   </p>
+
+   <p>
+      <label for="date">Data:</label>
+      <input type="date" name="date" id="idate" value="2026-04-26">
+   </p>
+
+   <p>
+      <label for="itime">Hora:</label>
+      <input type="time" name="time" id="itime" value="22:37">
+   </p>
+
+   <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+   </p>
+ </form>
+</body>
+</html>
