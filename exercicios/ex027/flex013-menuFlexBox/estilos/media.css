@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+
+@media screen and (min-width:768px) and (max-width: 992px) {
+    /* Tela de table */
+
+    
+
+    header{
+        height: 120px;
+    }
+
+    header > h1{
+        padding: 10px 0px 0px 20px;
+    }
+
+    header > menu {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    header > menu > a.link{
+        
+        flex-basis: 120px;
+        margin-left: 10px;
+    }
+    
+    
+}
+
+
+@media screen and (min-width: 992px) { /* Tela maior que 992px  */
+    header{
+        height: 120px;
+    }
+
+    header > h1{
+        text-align: left;
+        padding: 10px 0px 0px 20px;
+        width: 200px;
+    }
+
+    header > menu {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        
+        margin: 0px;
+        
+    }
+
+    header > menu > a.link{
+        flex: 0 0 200px;
+        flex-basis: 130px;
+        margin-left: 10px;
+        
+    }
+    
+}
