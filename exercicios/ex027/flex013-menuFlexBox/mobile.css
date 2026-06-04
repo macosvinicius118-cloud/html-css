@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+
+header, header > menu{
+    flex-flow: column nowrap;
+
+}
+
+header > h1{
+    flex-basis: 40px;
+}
+
+
+header > menu > a.link{
+    width: 90vw;
+    margin: 10px 0px 2px 0px;
+    
+}
+
+
+

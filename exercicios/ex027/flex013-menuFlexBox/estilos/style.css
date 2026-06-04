@@ -11,12 +11,16 @@ body{
 }
 
 header{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
     background-color: darkgray;
-    height: 400px;
     margin-bottom: 20px;
 }
 
 header > h1{
+    flex: 0 0 200px;
+    align-self: center;
     text-align: center;
     font-size: 2.5em; 
     padding: 5px 0px 0px 10px;  
@@ -24,14 +28,15 @@ header > h1{
 
 
 header > menu {
-    margin: 10px 10px 0px 10px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
 }
 
 header > menu > a.link{
     text-decoration: none;
-    display: block;
-    margin-top: 5px;
     padding: 10px;
+    margin: 10px;
     text-align: center;
     color: white;
     background-color: rgb(88, 77, 77);
@@ -63,3 +68,7 @@ main > p{
     text-align: justify;
     padding: 10px;
 }
+
+
+
+
